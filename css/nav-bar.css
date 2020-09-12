@@ -1,8 +1,8 @@
 #navigation {
     color: #ffffff;
     height: 110px;
-    background-image: linear-gradient( rgba(27,28,33, 0.9), rgba(27,28,33, 0));
-    //background-color: #fff;
+    //background-image: linear-gradient( rgba(219, 239, 225, 0.9), rgba(219, 239, 225, 0));
+    //background-color: rgba(219, 239, 225, 1);
     width: 100%;
     position: fixed;
     z-index: 99;
@@ -14,13 +14,32 @@ nav {
     height: 100%;
     width: 1230px;
     margin: auto;
-    padding: 10px 0;
+    padding: 10px 50px;
     display : flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 h1 {
     cursor: pointer;
 }
+
+#navigation-inner{
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 18%;
+}
+
+p {
+    color: #000;
+    font-size: 1.2rem;
+}
+
+p:hover {
+    color: grey;
+    cursor: pointer;
+}
+
+

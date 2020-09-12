@@ -1,8 +1,23 @@
+/*
+    **color schema darkest to brightest
+    rgb(29, 97, 122)
+    rgb(97, 194, 162)
+    rgb(190, 217, 209)
+    rgb(200, 232, 215)
+    rgb(219, 239, 225)
+
+*/
+
+
 html, body {
     height: 100%;
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
 }
 
 
