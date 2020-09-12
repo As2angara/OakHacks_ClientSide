@@ -1,0 +1,26 @@
+#navigation {
+    color: #ffffff;
+    height: 110px;
+    background-image: linear-gradient( rgba(27,28,33, 0.9), rgba(27,28,33, 0));
+    //background-color: #fff;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    transition: 0.4s;
+    animation: fadeIn 5s;
+}
+
+nav {
+    height: 100%;
+    width: 1230px;
+    margin: auto;
+    padding: 10px 0;
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+h1 {
+    cursor: pointer;
+}
