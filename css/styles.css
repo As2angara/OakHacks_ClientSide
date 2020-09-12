@@ -20,6 +20,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 #main-background {
     height: 100%;
@@ -31,3 +35,40 @@ body {
     background-attachment: fixed;
 
 }
+
+#form-container {
+    height: auto;
+    width: 400px;
+}
+
+.centre-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 2rem;
+}
+
+.container h3, .container label {
+    font-size: 1.3rem;
+}
+
+.container input {
+    padding: 5px;
+}
+
+.container table {
+    margin: auto;
+}
+
+
+
+
+
+

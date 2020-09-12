@@ -42,4 +42,9 @@ p:hover {
     cursor: pointer;
 }
 
+#logo-text {
+    font-size: 0.8rem;
+    color: #000;
+}
+
 
