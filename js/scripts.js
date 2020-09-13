@@ -15,7 +15,7 @@ function getEvents() {
 
                 output += `
                     <div class="card">
-                        <img src="./images/pic${num}.png" style="width:100%">
+                        <img src="./images/pic${num}.png">
                         <h3>${event.name}</h3>
                         <p>${event.description}</p>
                         <p><button>Register</button></p>

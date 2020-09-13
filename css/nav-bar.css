@@ -4,7 +4,7 @@
     //background-image: linear-gradient( rgba(219, 239, 225, 0.9), rgba(219, 239, 225, 0));
     //background-color: rgba(219, 239, 225, 1);
     width: 100%;
-    position: fixed;
+    position: absolute;
     z-index: 99;
     transition: 0.4s;
     animation: fadeIn 5s;
