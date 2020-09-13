@@ -4,21 +4,30 @@ document.getElementById('addEvent').addEventListener('submit', addEvent);
 
 
 function getEvents() {
-    fetch('sample.json')
+    fetch('http://127.0.0.1:5000/events')
         .then((res) => res.text())
         .then((data) => {
-            data.forEach((event) => {
+
+            let num;
+            let output = '';
+            JSON.parse(data)[0].forEach((event) => {
+                num = Math.floor(Math.random() * 6) + 1;
+
                 output += `
                     <div class="card">
-                        <img src="./images/cooking.png" style="width:100%">
+                        <img src="./images/pic${num}.png" style="width:100%">
                         <h3>${event.name}</h3>
                         <p>${event.description}</p>
                         <p><button>Register</button></p>
                         </div>
-                
-                `
+                   
+                `;
+            });
 
-            })
+            console.log(JSON.parse(data)[0]);
+            console.log(num);
+
+            document.getElementById('card-grid').innerHTML = output;
         });
 }
 
@@ -29,10 +38,9 @@ function addEvent() {
     let link = document.getElementById('meeting_link').value;
     let description = document.getElementById('desc_of_event').value;
 
-    //let num = Math.floor(Math.random() * 1000000);
-    let num = 83;
+    let num = Math.floor(Math.random() * 1000000);
 
-    fetch(`http://127.0.0.1:5000/event/${num}`, {
+    fetch(`http://127.0.0.1:5000/events/${num}`, {
         method: 'PUT',
         headers: {
             'Accept':'application/json, text/plain, */*',
