@@ -1,7 +1,11 @@
 
-document.getElementById('discover_tab').addEventListener('click', getEvents);
+document.getElementById('discover_tab').addEventListener('click', navigate);
 document.getElementById('addEvent').addEventListener('submit', addEvent);
 
+
+function navigate() {
+    window.location.href = "index.html";
+}
 
 function getEvents() {
     fetch('http://127.0.0.1:5000/events')
