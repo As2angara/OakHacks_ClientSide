@@ -8,18 +8,21 @@ function getEvents() {
         .then((res) => res.text())
         .then((data) => {
 
-            let num;
+            let num = 0;
             let output = '';
             JSON.parse(data)[0].forEach((event) => {
-                num = Math.floor(Math.random() * 6) + 1;
+                num++;
 
                 output += `
                     <div class="card">
                         <img src="./images/pic${num}.png">
-                        <h3>${event.name}</h3>
-                        <p>${event.description}</p>
-                        <p><button>Register</button></p>
-                        </div>
+                        <div class = "card_inner">
+                            <h3>${event.name}</h3>
+                            <p class = "date">${event.event_date}</p>
+                            <p>${event.description}</p>
+                            <p><button>Register</button></p>                
+                        </div>                      
+                     </div>
                    
                 `;
             });

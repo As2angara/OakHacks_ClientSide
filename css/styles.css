@@ -26,6 +26,7 @@ a {
     background-size: cover;
     background-attachment: fixed;
     padding: 0px 0px;
+    overflow-y: auto;
 
 }
 
@@ -80,8 +81,9 @@ a {
 #discover-container {
     text-align: center;
     width: 900px;
-    height: auto;
+    height: 100%;
     //background-color: white;
+    margin: auto;
 }
 
 #discover-container h1 {
@@ -121,10 +123,19 @@ a {
 .card {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     width: 270px;
-    margin: auto;
+    margin: 20px auto;
+    height: 485px;
     text-align: center;
     font-family: arial;
     background-color: #fff;
+}
+
+.card_inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 215px;
+    width: 100%;
 }
 
 .card img {
@@ -133,9 +144,13 @@ a {
     object-fit: cover;
 }
 
-.price {
+.card p, .card h3 {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.card .date {
     color: grey;
-    font-size: 22px;
 }
 
 .card button {
